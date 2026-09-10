@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "name": "CM12.1 ARM Chromium WebView prebuilt",
+  "package": {
+    "name": "com.android.webview",
+    "label": "Android WebView",
+    "versionCode": 300001,
+    "versionName": "39 (24441a182c-arm)",
+    "minSdk": 21,
+    "targetSdk": 21,
+    "abi": "armeabi-v7a"
+  },
+  "provenance": {
+    "sourceRepository": "https://github.com/hkfuertes/amazon_device_biscuit",
+    "sourceCommit": "4964cb72567b367e66fe21e352dd8d07e1e56c06",
+    "sourceProduct": "cm_biscuit-userdebug",
+    "sourceApkSha256": "97c5e6218380f981ddee6ec34dcda3f045fc1f4273ae14efc3bcfda58eaec86e",
+    "sourceApkSignerSha256": "a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc",
+    "sourceLibrarySha256": "fa964cd23aa36492d34f062f5b27aed28020aeb60bf5af859c7baa984624f961"
+  },
+  "artifact": {
+    "path": "prebuilt/arm/webview.apk",
+    "sha256": "5cf0ce55a5bc2894f7d7fc47bd64fec52da545427123cc9b28af0453376ab9f0",
+    "sizeBytes": 29751050,
+    "embeddedNativeLibrary": "lib/armeabi-v7a/libwebviewchromium.so",
+    "signature": "Removed during repacking; Android.mk signs the build output with DEFAULT_SYSTEM_DEV_CERTIFICATE."
+  },
+  "cm12Consumer": {
+    "productVariable": "PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes",
+    "module": "webview",
+    "requiredModules": [
+      "libwebviewchromium_loader",
+      "libwebviewchromium_plat_support"
+    ]
+  },
+  "runtimeDependencies": [
+    "libGLESv2.so",
+    "libandroid.so",
+    "libc.so",
+    "libdl.so",
+    "libicui18n.so",
+    "libicuuc.so",
+    "libjnigraphics.so",
+    "liblog.so",
+    "libm.so",
+    "libstdc++.so",
+    "libstlport.so"
+  ]
+}
